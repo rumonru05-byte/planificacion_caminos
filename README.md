@@ -22,7 +22,7 @@ Estos algoritmos permiten calcular la ruta óptima de menor coste entre dos loca
 ### 1. Clonar el repositorio
 Abre tu terminal y ejecuta el siguiente comando para descargar el código en tu equipo:
 ```bash
-git clone [https://github.com/rumonru05-byte/planificacion_caminos.git](https://github.com/rumonru05-byte/planificacion_caminos.git)
+git clone https://github.com/rumonru05-byte/planificacion_caminos.git
 cd planificacion_caminos
 ```
 
