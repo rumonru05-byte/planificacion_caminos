@@ -1,6 +1,6 @@
-# 🗺️ Planificación de Caminos en Robots Móviles (Dijkstra y A*)
+# 🗺️ Planificación de Caminos y Navegación Autónoma en Robots Móviles
 
-Este repositorio contiene la implementación en **MATLAB** de los algoritmos clásicos de búsqueda en grafos para la planificación de trayectorias en robótica móvil: **Dijkstra** (búsqueda desinformada) y **A*** (búsqueda informada).
+Este repositorio contiene la implementación en **MATLAB** de los algoritmos clásicos de búsqueda en grafos para la planificación de trayectorias en robótica móvil: **Dijkstra** (búsqueda desinformada) y **A*** (búsqueda informada). Además, incluye la implementación de un sistema completo de navegación autónoma para robótica móvil, integrando algoritmos clásicos de planificación global (búsqueda desinformada e informada en grafos) con métodos reactivos de evasión local de obstáculos (navegación por campos potenciales: [nav_campos_potenciales.git](https://github.com/rumonru05-byte/nav_campos_potenciales)).
 
 Estos algoritmos permiten calcular la ruta óptima de menor coste entre dos localizaciones separadas por largas distancias utilizando mapas topológicos.
 
