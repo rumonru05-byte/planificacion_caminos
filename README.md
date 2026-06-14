@@ -9,11 +9,23 @@ Estos algoritmos permiten calcular la ruta óptima de menor coste entre dos loca
 ---
 
 ## 📂 Contenido del Repositorio
+
+### Práctica 5: Algoritmo Dijkstra
 * `dijkstra.m`: Función principal que implementa el algoritmo de búsqueda de coste uniforme.
+* `test_dijkstra.m`: Script de validación con casos de prueba para grafos asimétricos.
+* `dibujar_ruta.m`: Función auxiliar para la visualización gráfica de los mapas topológicos.
+* `grafos.mat`: Archivo de datos con las matrices de costes reales y heurísticas de prueba.
+
+### Práctica 6: Algoritmo A*
 * `aestrella.m`: Función principal que implementa el algoritmo A* utilizando matrices heurísticas.
-* `test_dijkstra.m` / `test_aestrella.m`: Scripts de validación con los casos de prueba exigidos.
-* `dibujar_ruta.m`: Función auxiliar para la visualización gráfica de los mapas topológicos y el trazado de la ruta.
-* `grafos.mat`: Archivo de datos con las matrices de costes reales ($G$) y heurísticas ($H$).
+* `test_aestrella.m`: Script de validación sobre la importancia de la admisibilidad heurística.
+
+### Práctica 7: Navegación Autónoma (Integración Global-Local)
+* `navegacion_autonoma_aestrella.m`: Orquestador principal que une la planificación global sobre el mapa y la ejecución del movimiento del robot.
+* `campos_potenciales.m`: Algoritmo de navegación local reactiva para evasión de obstáculos.
+* `aestrella_euclideo.m`: Versión optimizada de A* que calcula heurísticas dinámicas basadas en distancias físicas reales para garantizar consistencia.
+* `dijkstra.m`: Función principal que implementa el algoritmo de búsqueda de coste uniforme.
+* `mapa2.m` y `mapa2.pgm`: Entorno de simulación laberíntico de alta densidad de obstáculos.
 
 ---
 
@@ -37,6 +49,15 @@ run('test_dijkstra.m')
 ```bash
 run('test_aestrella.m')
 ```
+5. Para lanzar el Sistema de Navegación Autónoma por Dijkstra, escribe en la consola:
+```bash
+navegacion_autonoma
+```
+6. Para lanzar el Sistema de Navegación Autónoma por A*, escribe en la consola:
+```bash
+navegacion_autonoma_aestrella
+```
+&emsp;&emsp; _En ambos casos deberás introducir el nodo de origen y el de destino deseados._
 
 ---
 
